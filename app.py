@@ -5,7 +5,7 @@ import pandas as pd
 
 app = Flask(__name__)
 model=pickle.load(open('Final_linear_model.pkl','rb'))
-@app.route('/')
+@app.route('/home')
 def home():
     #return 'Hello World'
     return render_template('home.html')
